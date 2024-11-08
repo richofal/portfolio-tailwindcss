@@ -10,11 +10,17 @@
       .gradient {
         background-image: linear-gradient(to bottom right, #4c51bf, purple);
       }
+      .gradient2 {
+        background-image: linear-gradient(to bottom left, purple, #4c51bf);
+      }
+      .gradient-skill{
+        background-image: linear-gradient(#8489e0, #464ddc);
+      }
     </style>
   </head>
   <body>
     <section class="w-screen mx-auto">
-      <nav class="flex flex-wrap p-3 justify-between bg-black w-full top-0 left-0 right-0 z-50">
+      <nav class="flex flex-wrap p-3 justify-between bg-gray-900 w-full top-0 left-0 right-0 z-50">
         <div class="flex flex-shrink-0 mr-6">
           <img src="/public/images/logo.png" alt="" class="h-auto w-20 mr-6"/>
         </div>
@@ -40,19 +46,19 @@
           </a>
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto px-6">
-          <div class="text-sm lg:flex-grow">
-            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-sm lg:text-lg mr-2 py-1">
+          <div class="text-sm lg:flex-grow text-white">
+            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-900 text-sm lg:text-lg mr-2 py-1">
               About Me
             </a>
-            <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-sm lg:text-lg mr-4 py-1">
+            <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-900 text-sm lg:text-lg mr-4 py-1">
               Skill Framework
             </a>
-            <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-sm lg:text-lg mr-4 py-1">
+            <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-900 text-sm lg:text-lg mr-4 py-1">
               Recent Work
             </a>
           </div>
-          <div class="px-3">
-            <a href="#" class="inline-block text-sm lg:text-lg px-3 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
+          <div class="px-3 text-white">
+            <a href="#" class="inline-block text-sm lg:text-lg px-3 py-2 rounded border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">
               Contact Me
             </a>
           </div>
@@ -60,14 +66,14 @@
       </nav>
     </section>
 
-    <section class="w-screen mx-auto py-4 gradient">
+    <section class="w-screen mx-auto py-2 gradient">
       <div class="px-16 py-8 text-center text-white">
         <h1 class="w-full text-5xl font-bold">About Me</h1>
         <div class="mb-4">
-          <div class="bg-purple-500 w-1/6 my-2 opacity-75 rounded h-1 mx-auto"></div>
+          <div class="bg-blue-500 my-4 opacity-75 rounded h-1 mx-auto"></div>
         </div>
-        <h2 class="text-3xl font-bold mb-2">Hi, I'm Richo Febrian</h2>
-        <h3 class="text-lg mb-2">
+        <h2 class="text-3xl font-bold mb-4">Hi, I'm <span class="text-blue-300">Richo </span>Febrian</h2>
+        <h3 class="text-lg mb-4">
           I'm a Full Stack Developer with a Bachelor's degree in Information
           Systems from Universitas Airlangga. I am passionate about technology
           and experienced in both front-end and back-end development. I'm
@@ -76,10 +82,10 @@
         </h3>
         <div class="w-full">
           <div class="px-4 py-4">
-            <img src="/public/images/about-me.jpg" alt="Profile" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"/>
+            <img src="/public/images/about-me.jpg" alt="Profile" class="shadow-lg rounded-full border-4  border-blue-500 max-w-full mx-auto text-center w-48"/>
           </div>
         </div>
-      </div>>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-3 bg-white px-4 py-6 m-16 rounded-xl">
         <div class="max-w-full shadow-lg px-4 py-6 bg-[#4c51bf] m-3 text-center">
           <i class="fas fa-laptop text-blue-500 fa-5x mb-6"></i>
@@ -135,18 +141,44 @@
       </div>
     </section>
 
-    <section class="w-screen mx-auto py-4 bg-white">
+    <section class="w-screen mx-auto gradient2 py-8">
       <div class="flex flex-wrap">
         <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
           <img src="/public/images/picture-2.jpeg" class="max-w-full rounded-lg shadow-lg">
         </div>
-        <div class="w-full md:w-5/12 ml-auto mr-auto px-4 bg-purple-800 h-32"></div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="md:pr-12">
+            <h1 class="w-full my-4 text-5xl font-bold text-center text-white">Skill Level</h1>
+            <div class="mb-4">
+              <div class="h-1 mx-auto bg-purple-500 opacity-75 my-0 mx-0 rounded"></div>
+            </div>
+            <p class="mt-4 text-md text-white text-center text-bold">
+              Here are my skill levels in programming languages, frameworks, and databases:
+            </p>
+            <ul class="list-none mt-3 text-white text-center">
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-l">ReactJS</p>
+                <div class="gradient-skill w-7/8"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-l">JavaScript</p>
+                <div class="gradient-skill w-[80%]"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg">MySQL</p>
+                <div class="gradient-skill w-[70%]"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg">Express.js</p>
+                <div class="gradient-skill w-[60%]"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section
-      class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700"
-    >
+    <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700">
       Recent Work
     </section>
 

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .gradient {
+        background-image: linear-gradient(to bottom right, #4c51bf, purple);
+      }
+    </style>
   </head>
   <body>
     <section class="w-screen mx-auto">
@@ -108,18 +113,48 @@
       </nav>
     </section>
 
-    <section class="w-screen mx-auto py-10 bg-pink-500 h-32">About Me</section>
+    <section class="w-screen mx-auto py-4 gradient">
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About Me</h1>
+        <div class="mb-4">
+          <div
+            class="bg-purple-500 w-1/6 my-2 opacity-75 rounded h-1 mx-auto"
+          ></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">Hi, I'm Richo Febrian</h2>
+        <h3 class="text-lg mb-2">
+          I’m a Full Stack Developer with a Bachelor's degree in Information
+          Systems from Universitas Airlangga. I am passionate about technology
+          and experienced in both front-end and back-end development. I’m
+          looking forward to leveraging my skills and passion to create
+          innovative solutions and contribute to a dynamic team.
+        </h3>
+        <div class="w-full">
+          <div class="px-4 py-4">
+            <img
+              src="/public/images/about-me.jpg"
+              alt=""
+              class="shadow-lg rounded-full max-w-full mx-auto text-center w-48"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="w-screen mx-auto py-4 bg-white h-32">
       Skill Framework
     </section>
+
     <section
       class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700"
     >
       Recent Work
     </section>
+
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">
       Contact Me
     </section>
+
     <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
   </body>
 </html>

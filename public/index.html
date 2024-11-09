@@ -16,6 +16,15 @@
       .gradient-skill{
         background-image: linear-gradient(#8489e0, #464ddc);
       }
+      .subtitle{
+        background-image: linear-gradient(#ffffff, #464ddc);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+      }
+      .recent-work{
+        background-image: linear-gradient(#464ddc, #8489e0);
+      }
     </style>
   </head>
   <body>
@@ -148,7 +157,7 @@
         </div>
         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
-            <h1 class="w-full my-4 text-5xl font-bold text-center text-white">Skill Level</h1>
+            <h1 class="w-full my-4 text-5xl font-bold text-center subtitle">Skill Level</h1>
             <div class="mb-4">
               <div class="h-1 mx-auto bg-purple-500 opacity-75 my-0 mx-0 rounded"></div>
             </div>
@@ -178,8 +187,20 @@
       </div>
     </section>
 
-    <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-indigo-900 lg:text-green-700">
-      Recent Work
+    <section class="w-screen mx-auto py-7 gradient">
+      <div class="text-center mb-8">
+        <h1 class="w-full subtitle text-5xl font-bold">My Recent Work</h1>
+        <div class="py-3">
+          <div class="h-1 mx-auto bg-blue-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
+        </div>
+        <p class="text-lg text-white">Here are my recent works:</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 m-8">
+        <div class="recent-work px-4 py-4 m-2 shadow-lg rounded h-32"></div>
+        <div class="gradient-skill px-4 py-4 m-2 shadow-lg rounded h-32"></div>
+        <div class="recent-work px-4 py-4 m-2 shadow-lg rounded h-32"></div>
+        <div class="gradient-skill px-4 py-4 m-2 shadow-lg rounded h-32"></div>
+      </div>
     </section>
 
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">
